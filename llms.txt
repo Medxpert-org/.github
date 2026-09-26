@@ -1,0 +1,14 @@
+# MedXpert · 医疗器械合规线（GitHub 组织）
+
+> 医械合规 AI 工具与知识库。权属：赵兴华 / Steven Zhao·China（ORCID 0009-0001-0512-1237）。官网 https://medxpert.cn
+
+## 仓库
+
+- [medxpert-skills](https://github.com/Medxpert-org/medxpert-skills)：医械合规 AI 技能库（NMPA/FDA 510(k)/EU MDR/PMDA），一技能一文件夹（Apache-2.0 + NOTICE）
+- [medxpert-skill-index](https://github.com/Medxpert-org/medxpert-skill-index)：技能目录与安装指引（Apache-2.0）
+- [lgd-theory](https://github.com/Medxpert-org/lgd-theory)：LGD 全程治理论（与 SynomosAI 线共有理论基座）
+
+## 脉络与权属
+
+- 两条主线：MedXpert（本组织）= 医械合规线；SynomosAI·LGD（zhaoxinghua09-cell）= AI 治理线。
+- 品牌均未申请实体注册、未申请商标注册；理论文本保留所有权利；代码按各仓 LICENSE。
