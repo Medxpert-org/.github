@@ -1,0 +1,18 @@
+name: Validate CODEOWNERS
+
+on:
+  pull_request:
+    paths:
+      - "CODEOWNERS"
+      - ".github/CODEOWNERS"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: codeowners-validator
+        uses: mszostok/codeowners-validator@v0.7.4
+        with:
+          checks: "files,owners,duppatterns,dumi"
+          owner_checker_owners: "@Medxpert-org/medxpert @Medxpert-org/itu-standards @Medxpert-org/quality-security @Medxpert-org/publish-dist @SynomosAI/synomosai-gov @SynomosAI/lgd-theory"
