@@ -7,6 +7,8 @@ permissions:
   contents: read
 
 jobs:
+  # NOTE: job name is load-bearing — it is the required status check context
+  #       ("validate-codeowners") on the default branch. Do NOT rename.
   validate:
     name: validate-codeowners
     runs-on: ubuntu-latest
@@ -32,3 +34,30 @@ jobs:
             exit 1
           fi
           echo "team-based CODEOWNERS OK ($F)"
+      - name: Detect duplicate CODEOWNERS patterns
+        run: |
+          F="${{ steps.locate.outputs.file }}"
+          dup=$(grep -vE '^\s*#|^\s*$' "$F" | awk '{print $1}' | sort | uniq -d)
+          if [ -n "$dup" ]; then
+            echo "::error::duplicate CODEOWNERS patterns detected: $dup"
+            exit 1
+          fi
+          echo "no duplicate CODEOWNERS patterns"
+      - name: Validate versioned ruleset JSON (jq)
+        run: |
+          shopt -s nullglob
+          files=(.github/rulesets/*.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "no versioned ruleset files present"
+            exit 0
+          fi
+          fail=0
+          for f in "${files[@]}"; do
+            if jq empty "$f" 2>/dev/null; then
+              echo "OK   $f"
+            else
+              echo "::error file=$f::$f is not valid JSON"
+              fail=1
+            fi
+          done
+          exit $fail
