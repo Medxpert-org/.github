@@ -1,0 +1,53 @@
+# MedXpert（医械合规线）· 组织门面仓 — 完整文本
+
+本文件为 llms.txt 标准的「完整版」，供长上下文模型一次性读取本仓库的完整说明。
+
+## 这是什么
+
+`Medxpert-org/.github` 是 GitHub 组织级配置与门面仓。MedXpert 是**医疗器械合规 AI 工具与知识库**组织：医械合规 AI 技能集（NMPA / FDA 510(k) / EU MDR / PMDA）、技能索引、LGD 全程治理论基座。
+
+一句话：医械合规 AI 的组织门面——技能、索引与治理理论的入口。
+
+## 组织定位
+
+- 技能库：`Medxpert-org/medxpert-skills`（一技能一文件夹）。
+- 技能索引：`Medxpert-org/medxpert-skill-index`（目录与安装指引）。
+- 理论基座：`Medxpert-org/lgd-theory`（历史镜像；**内容真源在 `zhaoxinghua09-cell/lgd-theory`**）。
+- 全景：MedXpert（医械合规线）× SynomosAI·LGD（AI 治理线，`zhaoxinghua09-cell`）构成两条主线的完整矩阵；按主题检索用 `topic:medxpert`。
+
+## 本仓库结构
+
+- `profile/README.md` — 组织首页展示（与根 README 同源）
+- `README.md` — 本仓库说明与组织总览
+- `SECURITY.md` — 组织级安全策略
+- `CONTRIBUTING.md` — 贡献指南
+- `CODE_OF_CONDUCT.md` — 行为准则
+- `NOTICE.md` — 组织级声明
+- `PULL_REQUEST_TEMPLATE.md` — PR 模板
+- `.github/workflows/` · `.github/rulesets/` — 组织级 CI 与规则配置
+- `llms.txt` / `llms-full.txt` / `AGENTS.md` / `README.en.md` — AI 可发现性文件
+
+## 快速开始
+
+```bash
+# 浏览组织仓库列表
+gh repo list Medxpert-org --limit 50
+
+# 克隆医械合规技能库
+git clone https://github.com/Medxpert-org/medxpert-skills.git
+
+# 按主题检索组织仓
+gh search repos --topic medxpert --owner Medxpert-org
+```
+
+## 许可与权利
+
+本仓库为**组织门面与配置仓，未附独立 LICENSE 文件**。可执行代码按各仓 LICENSE 授权；理论文本/方法论/规范性表述一律保留所有权利。品牌（MedXpert、SynomosAI、LGD）均未申请实体注册、未申请商标注册。完整权属宣告见 README（照抄《LGD 对外表述规范》v1.4 §3.2）。
+
+## 链接
+
+- 组织主页: https://github.com/Medxpert-org
+- 官网: https://medxpert.cn
+- 技能库: https://github.com/Medxpert-org/medxpert-skills
+- 技能索引: https://github.com/Medxpert-org/medxpert-skill-index
+- LGD 理论真源: https://github.com/zhaoxinghua09-cell/lgd-theory
