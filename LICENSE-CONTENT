@@ -1,0 +1,53 @@
+# Content License — All Rights Reserved
+
+**The prose content of this repository is all rights reserved.** It is *not* released
+under a public copyright licence, and it is **not** CC BY 4.0.
+
+## What this file covers
+
+The content of this repository — `README.md`, `README.en.md`, `profile/README.md`,
+`llms.txt`, `llms-full.txt`, `AGENTS.md`, `SECURITY.md`, `CONTRIBUTING.md`,
+`CODE_OF_CONDUCT.md`, `NOTICE.md`, `PULL_REQUEST_TEMPLATE.md`, and any other document
+or page file at the repository level.
+
+This repository is the GitHub organization facade & configuration repository of
+MedXpert (medical-device compliance line). The organizational statements, theory texts
+and normative expressions in it reserve all rights — see the ownership declaration in
+`README.md` / `profile/README.md` (verbatim from "LGD External Representation
+Standard" v1.4 §3.2).
+
+Configuration and automation code (`.github/workflows/`, `.github/rulesets/`,
+`.github/dependabot.yml`) is licensed under **MIT** — see `LICENSE`.
+
+Copyright (c) 2026 Xinghua Zhao (赵兴华 / Steven Zhao·China). All rights reserved.
+
+## What you may do without asking
+
+- **Cite** — quote a short passage, a table or a repository name, in academic,
+  journalistic, evaluative or public-discussion work, **with attribution**.
+- **Link** — link to this repository, to the organization profile, or to any file in it,
+  from anywhere.
+- **Browse** — view the organization profile and repository listing.
+- **Run and apply** — run the CI/automation configurations under the terms of `LICENSE`
+  (MIT) in your own forks or workflows.
+
+## What requires written permission
+
+- Republishing the organization profile or its content, in whole or in substantial part,
+  in any medium;
+- Translating, adapting, abridging, or producing any derivative work;
+- Bundling the content into a product, a paid service, a course, a dataset, or a
+  machine-learning training corpus;
+- Removing or altering the attribution or rights notices.
+
+Requests go to the contact line below. A request that serves the project's purpose — a
+course, a translation, a standards submission — is normally granted; asking first is the
+whole cost.
+
+## Attribution, when you cite
+
+    MedXpert organization profile, Xinghua Zhao (Steven Zhao·China), <as-of date>. All rights reserved.
+
+---
+
+**Contact.** zhaoxinghua09@gmail.com ｜ ORCID `0009-0001-0512-1237`

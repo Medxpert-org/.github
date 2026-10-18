@@ -72,10 +72,11 @@ LGD 治理线的理论仓、协议仓、验证仓与入口仓（Core 5）统一�
 - `PULL_REQUEST_TEMPLATE.md` — PR 模板
 - `.github/workflows/` · `.github/rulesets/` — 组织级 CI 与规则配置
 - `llms.txt` / `llms-full.txt` / `AGENTS.md` / `README.en.md` — AI 可发现性文件
+- `LICENSE` / `LICENSE-CONTENT` — 代码 MIT / 内容 ARR 双层许可
 
 ## 许可说明 / License
 
-本仓库为**组织门面与配置仓，未附独立 LICENSE 文件**。本页内容与组织内理论/规范性表述文本不在任何代码许可覆盖范围内；各代码仓库的许可以其仓库内 LICENSE 为准。引用与分发组织内文档前，请先与维护者确认口径。
+本仓库配置与自动化代码（`.github/workflows/`、`.github/rulesets/` 等）采用 **MIT**（见 [LICENSE](LICENSE)）；文档内容采用**「保留所有权利 + 注明出处可引用」口径（见 [LICENSE-CONTENT](LICENSE-CONTENT)）**。本页与组织内理论/规范性表述文本不在任何代码许可覆盖范围内；各代码仓库的许可以其仓库内 LICENSE 为准。引用与分发组织内文档前，请按 LICENSE-CONTENT 的引用格式注明出处。
 
 ## 安全与贡献
 
